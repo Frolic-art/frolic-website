@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Frolic — Creative Studio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+    body {
+      background-color: #ffffff;
+      color: #0A0F2C;
+      line-height: 1.6;
+    }
+    header {
+      padding: 4rem 2rem;
+      text-align: center;
+      background: linear-gradient(90deg, #FFD700, #FFB347);
+      color: #0A0F2C;
+    }
+    header h1 {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+    }
+    header p {
+      font-size: 1.2rem;
+    }
+    section {
+      padding: 4rem 2rem;
+      max-width: 1000px;
+      margin: auto;
+    }
+    h2 {
+      font-size: 2rem;
+      margin-bottom: 1.5rem;
+      color: #111;
+    }
+    .services, .portfolio {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 2rem;
+    }
+    .card {
+      background-color: #f9f9f9;
+      padding: 1.5rem;
+      border-radius: 12px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+      transition: transform 0.3s;
+    }
+    .card:hover {
+      transform: translateY(-5px);
+    }
+    .testimonial {
+      background-color: #f0f0f0;
+      padding: 1rem;
+      border-left: 4px solid #FFB347;
+      margin-bottom: 1rem;
+      font-style: italic;
+    }
+    footer {
+      text-align: center;
+      padding: 2rem;
+      background-color: #0A0F2C;
+      color: #fff;
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+    input, textarea {
+      padding: 0.75rem;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+    }
+    button {
+      background-color: #FFB347;
+      border: none;
+      padding: 0.75rem;
+      border-radius: 6px;
+      cursor: pointer;
+      color: #0A0F2C;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Frolic</h1>
+    <p>Design That Thinks, Moves, and Dares to Play.</p>
+  </header>
+
+  <section>
+    <h2>About Frolic</h2>
+    <p>Frolic is a multidisciplinary design studio and creative agency focused on intelligent, joyful, and future-forward experiences. We blend branding, strategy, and visual storytelling to craft impactful digital products and compelling narratives.</p>
+  </section>
+
+  <section>
+    <h2>Our Services</h2>
+    <div class="services">
+      <div class="card">Branding & Identity</div>
+      <div class="card">UI/UX Design</div>
+      <div class="card">Motion & Interactive Media</div>
+      <div class="card">Strategy & Consulting</div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Portfolio</h2>
+    <div class="portfolio">
+      <div class="card">Project: Soundstorm</div>
+      <div class="card">Project: Echo Type</div>
+      <div class="card">Project: Nest UI</div>
+    </div>
+  </section>
+
+  <section>
+    <h2>What Our Clients Say</h2>
+    <div class="testimonial">“Frolic transformed our brand into a living, breathing experience. Absolutely brilliant work!”</div>
+    <div class="testimonial">“Every interaction with Frolic was full of energy, clarity, and creativity.”</div>
+  </section>
+
+  <section>
+    <h2>Contact Us</h2>
+    <form>
+      <input type="text" placeholder="Your Name" required />
+      <input type="email" placeholder="Your Email" required />
+      <textarea rows="4" placeholder="Your Message"></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Frolic Studio. All rights reserved.</p>
+  </footer>
+</body>
+</html>
